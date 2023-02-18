@@ -29,7 +29,8 @@ public class UserController {
         userService.save(user);
     }
 /*
-
+    ** commented-out methods were for testing purposes with Postman,
+    ** since I could not figure out how to send a User object **
     @PostMapping("/api/register")
     public void register(@RequestParam String email, @RequestParam String password) {
         if (userService.findAll().stream()
