@@ -27,10 +27,7 @@ public class RecipeService {
 
     public Page<Recipe> findAll (Integer pageNo, Integer pageSize) {
         Pageable paging = PageRequest.of(pageNo, pageSize);
-
-        Page<Recipe> pagedResult = recipeRepository.findAll(paging);
-
-        return pagedResult;
+        return recipeRepository.findAll(paging);
     }
 
     public Optional<Recipe> findById(Long id) {
