@@ -28,6 +28,8 @@ public class RecipeController {
     public ResponseEntity<?> createRecipe(@Valid @RequestBody Recipe recipe,
                                           @AuthenticationPrincipal User user) throws JsonProcessingException {
     /*
+        ** commented-out methods were for testing purposes with Postman,
+        ** since I could not figure out how to send a User object **
     public ResponseEntity<?> createRecipe(@RequestParam String name,
                                           @RequestParam String description,
                                           @RequestParam String[] ingredients,
